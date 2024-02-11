@@ -1,0 +1,32 @@
+\\javascript is shnochronous->one code execute then other code execute->single thread->ek hi thread pr sara code execute hoga , ashynchrnous means->multiple threads
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>JAVASCRIPT</h1>
+   <button id = "stop">STOP</button>
+</body>
+
+<script>
+    const name = function(){
+        console.log("pawan");
+    }
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "JAVSCRIPT IS A LANGUAGE"
+    }
+
+    const changeMe = setTimeout(changeMe,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+})
+</script>
+</html>
