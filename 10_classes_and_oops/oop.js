@@ -41,3 +41,4 @@ console.log(userOne.constructor);
 
 //new is a constructor function h, ek hi object se multiple constructor bna skte h
 //jaise hi this object create krenege, ek new empty {} object create hoga.then constuctor func call hoga due to this new keywords and print arguments
+//this,new,classes,inthertihance comes from inheritance
