@@ -20,15 +20,15 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]  // can give array value in a object 
 }
 
-// console.log(JsUser.email)  // jb dot ki tarah dete h tb string ki tarah access krta h
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+console.log(JsUser.email)  // jb dot ki tarah dete h tb string ki tarah access krta h
+console.log(JsUser["email"])
+console.log(JsUser["full name"])
+console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)   //freeze object ,value cant change
+ Object.freeze(JsUser)   //freeze object ,value cant change
 JsUser.email = "hitesh@microsoft.com"   //cahnges nhi honge due to freeze
-// console.log(JsUser);
+console.log(JsUser);
 
 JsUser.greeting = function(){
     console.log("Hello JS user");
