@@ -18,7 +18,7 @@ user.welcomeMessage()
 
  function func(){      // const func = function(){}
     let username = "pawan"
-    console.log(this.username)  // function ke andar this keyword kamm nhi krega, only inside object
+    console.log(this.username)  // function ke andar this keyword kamm nhi krega, only inside object - undefined
     console.log(this) // gives more values
  }
  func()

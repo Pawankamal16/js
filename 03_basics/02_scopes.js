@@ -3,7 +3,7 @@ let a = 300
 if (true) {
     let a = 10
     const b = 20
-      console.log("INNER: ", a);
+    console.log("INNER: ", a);
     
 }
 
@@ -33,7 +33,7 @@ if (true) {
     const username = "hitesh"
     if (username === "hitesh") {
         const website = " youtube"
-            console.log(username + website);
+        console.log(username + website);
     }
     // console.log(website);   // error - not in scope
 }
@@ -46,6 +46,7 @@ if (true) {
 
 console.log(addone(5))
 
+// function declaration
 function addone(num){
     return num + 1
 }
@@ -53,6 +54,7 @@ function addone(num){
 
 
 //addTwo(5) // gives error
+// variable ke andr hold kr liya h function ko
 const addTwo = function(num){
     return num + 2   // function expression
 }
