@@ -1,4 +1,4 @@
-// const user= new Object //singleton
+// const user= new Object //singleton  {}
 
 const user = {}  // not singleton
 
@@ -55,11 +55,11 @@ const user3 = [
 
 console.log(user3[1].id)
 
-console.log(Object.keys(user))
+console.log(Object.keys(user))   // datatype is array of keys
 console.log(Object.values(user))
 console.log(Object.entries(user))
-console.log(user.hasOwnProperty('isLoggedIn'))
-
+console.log(user.hasOwnProperty('isLoggedIn'))  // true
+  
 
 //object destructure
 

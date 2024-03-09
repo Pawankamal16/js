@@ -7,8 +7,8 @@ function sayMyName(){
     console.log("S");
     console.log("H");
 }
-
-// sayMyName()
+// sayMyName - function reference
+// sayMyName()  // function execution
 
 // function addTwoNumbers(number1, number2){
 
@@ -40,19 +40,21 @@ function loginUserMessage(username = "sam"){
 }
 
 console.log(loginUserMessage("hitesh"))
- console.log(loginUserMessage())
+ console.log(loginUserMessage())   // undefined
 
 
 
- function calculateCartPrice(val1, val2, ...num1){
+ function calculateCartPrice(val1, val2, ...num1){     // rest(spreed) operatpr - bundle al the items and return
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+ console.log(calculateCartPrice(200, 400, 500, 2000))
 
+
+ // how to paas object in function
 const user = {
     username: "hitesh",
-    prices: 199
+    price: 199
 }
 
 function handleObject(anyobject){
@@ -62,12 +64,15 @@ function handleObject(anyobject){
 
 
 
-// // handleObject(user)
+handleObject(user)
+
 // handleObject({
 //     username: "sam",
 //     price: 399
 // })
 
+
+// paas array in function
 // const myNewArray = [200, 400, 100, 600]
 
 // function returnSecondValue(getArray){
