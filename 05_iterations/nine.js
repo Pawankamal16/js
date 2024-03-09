@@ -1,7 +1,7 @@
 const myNums = [1, 2, 3]
 
 
-//accumulater initialize with zero below ans currval is currvalue in array
+//accumulater initialize with zero below ans currval is curr value in array
 const myTotal = myNums.reduce(function (acc, currval) {
     console.log(`acc: ${acc} and currval: ${currval}`);
     return acc + currval
@@ -34,3 +34,5 @@ const shoppingCart = [
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 
 console.log(priceToPay);
+
+// the reduce method execute the user supplied " reducer" callback function on each element of array

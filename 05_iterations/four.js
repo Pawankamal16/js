@@ -1,3 +1,4 @@
+// map m for of and object m for in use hota h iterate krne ke liye and vice versa is not possible
 const myObject = {
     js: 'javascript',
     cpp: 'C++',

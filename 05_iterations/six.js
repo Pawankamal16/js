@@ -50,6 +50,6 @@ const books = [
   let userBooks = books.filter( (bk) => bk.genre === 'History')   // scope ke andr nhi h to return keyboard ka use nhi krenge
 
   userBooks = books.filter( (bk) => { 
-    return bk.publish >= 1995 && bk.genre === "History"   //scope ke andar return keyborad use nhi krenge
+    return bk.publish >= 1995 && bk.genre === "History"   //scope ke andar return keyborad use  krenge
 })
   console.log(userBooks);
