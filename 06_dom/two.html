@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,23 +18,23 @@
 </body>
 <script>
     const parent = document.querySelector('.parent')
-    // console.log(parent);
-    // console.log(parent.children);
-    // console.log(parent.children[1].innerHTML);
+    // console.log(parent);    // not html collection
+    // console.log(parent.children);     // html collection
+    // console.log(parent.children[1].innerHTML);  // tuesday
 
     // for (let i = 0; i < parent.children.length; i++) {
     //      console.log(parent.children[i].innerHTML);
         
     // }
     parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
+    // console.log(parent.firstElementChild);  // monday
+    // console.log(parent.lastElementChild);   // thursday
 
     const dayOne = document.querySelector('.day')
-    // console.log(dayOne);
-    // console.log(dayOne.parentElement);
-    // console.log(dayOne.nextElementSibling);
+    // console.log(dayOne);     // monday
+    // console.log(dayOne.parentElement);   // parent
+    // console.log(dayOne.nextElementSibling);  // tuesday
 
-    console.log("NODES: ", parent.childNodes);
+    console.log("NODES: ", parent.childNodes);   // complex tree structure - line break bhi textNode h - 9
 </script>
 </html>
