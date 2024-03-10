@@ -1,7 +1,7 @@
 //events kisi activity pr invoke hote h,browser m jitne events hote h, unhi events m activity ko kaise krte h
 //onclick func gives less features but addEventListener access all activities of mouse,keyboard - listen all events
 //event propagation two types = event bubbling- by default (false)- bootom to up(first images then li and ul) and event capturing(true) - top to bottom 
-//javascript by default asunchronous nhi , setTimeout,setInterval, etc ka use krke asynchronous bnate h
+//javascript by default asynchronous nhi , setTimeout,setInterval, etc ka use krke asynchronous bnate h
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,13 +35,13 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
+    // document.getElementById('images').addEventListener('click', function(e){            // e-event object
     //     console.log("clicked inside the ul");
     // }, false)
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation()
+    //     e.stopPropagation()                     //stop bubbling, event bubble hokr uper ke propagation pr nhi jayega - owl clicked otherwise - owl lciked, clicked inside th url
     // }, false)
     
     // document.getElementById('google').addEventListener('click',function(e){
@@ -56,7 +56,7 @@
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
             let removeIt = e.target.parentNode
-            removeIt.remove()
+            removeIt.remove()   // jaise hi images pr click krenege, delete ho jayega
         }
     })
     
@@ -67,3 +67,7 @@
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
+
+
+// all events run sequentially in javascript, events are invoked in activity- ex -browser events - mouse click, keyboard press,click
+// add Evnt listener gives the property of onclick and propagatiopn availability
