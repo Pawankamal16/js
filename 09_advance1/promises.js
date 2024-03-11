@@ -1,6 +1,8 @@
 //promise consume and promise creation are two part of promises, promises take callback, inside that resolve and reject two paramater
 // then ka direct connection resolve se hota h
 
+
+//promise creation
 const PromiseOne = new Promise(function(resolve, reject){
      //Do an async task
     // DB calls, cryptography, network
@@ -10,13 +12,15 @@ const PromiseOne = new Promise(function(resolve, reject){
     },1000)
 })
 
+
+//promise consumption
 PromiseOne.then(function(){
     console.log('promise consumed');
 })
 
 
 
-//data consumption
+//create promise in one part- these promise may take network request, file handling
 new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log('async2 task done');
@@ -47,7 +51,7 @@ const promisefour = new Promise(function(resolve,reject){
         }
     },1000)
 })
-//promisefour.then().catch() -> then value return krega, catch errot dega
+//promisefour.then().catch() -> then value return krega, catch error dega
 
 promisefour.then((user)=>{
     console.log(user);
@@ -83,13 +87,13 @@ async function consumePromiseFive(){
     }
 }
 consumePromiseFive()
-
+//for error handling use try catch inside async function
 
 // async function getAllUsers(){
 //     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')  // response in string format
 
-//         const data = await response.json()
+//         const data = await response.json()  // taking time of fetching so use await
 //         console.log(data);
 //     } catch (error) {
 //         console.log("E: ", error);
